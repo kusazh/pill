@@ -4,14 +4,12 @@ $(function(){
     $("button").click(function(){
         var word = "";
         for (var i = 0; i < Math.random() * 5 + 2; i++) {
-            word += "<p>"
             word += words[Math.floor(Math.random() * words.length)];
             word += words[Math.floor(Math.random() * words.length)];
-            word += "</p>"
+            word += "<br>"
         }
         $("#words").fadeOut(function(){
             $(this).html(word).fadeIn();
         });
     });
-  });
-  
+});
