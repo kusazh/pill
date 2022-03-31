@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>粉紅膠囊</title>
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -13,9 +12,10 @@
   </head>
 
   <body>
-    <div id="words"></div>
+    <div id="old_pink" class="pink"></div>
+    <div id="new_pink" class="pink" style="opacity: 0;"></div>
     <div class="center">
-      <button></button>
+      <button onclick="capsule()"></button>
     </div>
   </body>
 </html>

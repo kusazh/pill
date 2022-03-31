@@ -26,6 +26,11 @@ button {
   margin-left: -16px;
 }
 
+.pink {
+  transition: opacity 1s;
+  position: absolute;
+}
+
 @media screen and (max-width: 580px) {
   body {
     width: auto;

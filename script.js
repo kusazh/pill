@@ -1323,16 +1323,23 @@ const words = [
   "愛人",
 ];
 
-$(function () {
-  $("button").click(function () {
-    var word = "";
-    for (var i = 0; i < Math.random() * 5 + 2; i++) {
+
+function capsule(){
+  const old_pink = document.getElementById("old_pink");
+  const new_pink = document.getElementById("new_pink");
+  var word = "";
+  for (var i = 0; i < Math.random() * 5 + 2; i++) {
       word += words[Math.floor(Math.random() * words.length)];
       word += words[Math.floor(Math.random() * words.length)];
       word += "<br>";
     }
-    $("#words").fadeOut(function () {
-      $(this).html(word).fadeIn();
-    });
-  });
-});
+  if (old_pink.style.opacity === '0') {
+    new_pink.style.opacity = 0;
+    old_pink.innerHTML = word;
+    old_pink.style.opacity = 1;
+  } else {
+    old_pink.style.opacity = 0;
+    new_pink.innerHTML = word;
+    new_pink.style.opacity = 1;
+  };
+}
