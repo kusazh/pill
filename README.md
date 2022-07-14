@@ -1,6 +1,8 @@
 # capsule
 
-粉紅膠囊
+### 粉紅膠囊
+
+<div><img src="https://user-images.githubusercontent.com/52033954/178950431-84e963c1-03de-4f22-99c0-66f518cdbff2.PNG" width='300px'/></div>
 
 a web demake of my iOS app 粉红藥丸 (2016)
 
