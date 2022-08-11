@@ -6,17 +6,27 @@
     <title>粉紅膠囊</title>
     <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
 
   <body>
-    <div id="old_pink" class="pink"></div>
-    <div id="new_pink" class="pink" style="opacity: 0;"></div>
-    <div class="center">
-      <button onclick="takeCapsule()"></button>
+    <div class="main">
+      <div id="old" class="poem"></div>
+      <div id="new" class="poem" style="opacity: 0"></div>
+      <div class="capsule">
+        <button id="icon" onclick="takeCapsule()"></button>
+      </div>
+      <button class="menu" id="menu" onclick="openMenu()"></button>
+      <div class="popup" id="popup">
+        <div class="popupButton">
+          <button onclick="changeCapsule('pink')"></button>
+          <button onclick="changeCapsule('libai')"></button>
+        </div>
+      </div>
     </div>
+    <button class="close" id="close" onclick="closeMenu()" disabled></button>
   </body>
 </html>

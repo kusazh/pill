@@ -1,34 +1,93 @@
 body {
-  margin: 50px auto;
-  padding: 0 50px 0 50px;
   font-family: Sans-serif;
+  font-size: 2.5rem;
   font-weight: 900;
+  line-height: 1.2;
+
+  width: 580px;
+
   color: #fff;
   background-color: #000;
-  width: 580px;
-  font-size: 45px;
-  line-height: 1.2;
 }
 
 button {
-  background-image: url("./pill.png");
-  background-size: cover;
-  background-color: transparent;
   border: none;
-  width: 32px;
-  height: 64px;
+  background-color: transparent;
+  background-size: cover;
 }
 
-.center {
+.main {
+  margin: 3rem auto;
+  padding: 0 3rem 0 3rem;
+}
+
+.capsule {
   position: fixed;
-  bottom: 50px;
+  bottom: 3rem;
   left: 50%;
-  margin-left: -16px;
+
+  margin-left: -1rem;
 }
 
-.pink {
-  transition: opacity 1s;
+.capsule button {
+  width: 2rem;
+  height: 4rem;
+
+  background-image: url("./pink.svg");
+}
+
+.poem {
   position: absolute;
+
+  transition: opacity 1s;
+}
+
+.menu {
+  position: absolute;
+  right: 3rem;
+
+  width: 4rem;
+  height: 4rem;
+
+  transition: opacity 1s;
+
+  background-image: url("./menu.svg");
+}
+
+.popup {
+  position: fixed;
+  bottom: -20rem;
+  left: 50%;
+
+  overflow: hidden;
+
+  width: 16rem;
+  height: 16rem;
+  margin-left: -8rem;
+
+  transition: 0.8s;
+
+  background-image: url("./menu.svg");
+  background-size: cover;
+}
+
+.popupButton {
+  padding: 2rem 0 0 2rem;
+}
+
+.popupButton button {
+  margin: 1rem 0.3rem 1rem 1rem;
+  opacity: 0.5;
+  width: 2rem;
+  height: 4rem;
+}
+
+.close {
+  position: absolute;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 580px) {

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="512px" viewBox="0 0 256 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <defs>
+        <linearGradient x1="50%" y1="200.295571%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#C73E3A" offset="0%"></stop>
+            <stop stop-color="#C1328E" offset="100%"></stop>
+        </linearGradient>
+        <path d="M8.52651283e-14,128 C8.52651283e-14,57.307552 57.307552,0 128,0 C198.692448,0 256,57.307552 256,128 L256,384 C256,454.692448 198.692448,512 128,512 C57.307552,512 5.68434189e-14,454.692448 5.68434189e-14,384 Z" id="path-2"></path>
+        <filter x="-18.7%" y="-9.4%" width="137.5%" height="118.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="32" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
+            <feGaussianBlur stdDeviation="32" in="shadowSpreadInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.198481206 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组">
+            <path d="M0,256 L256,256 C256,198.972303 256,156.305636 256,128 C256,57.307552 198.692448,0 128,0 C57.307552,0 0,57.307552 0,128 C0,175.128299 0,217.794965 0,256 Z" id="椭圆形" fill="url(#linearGradient-1)"></path>
+            <path d="M0,512 L256,512 C256,454.972303 256,412.305636 256,384 C256,313.307552 198.692448,256 128,256 C57.307552,256 0,313.307552 0,384 C0,431.128299 0,473.794965 0,512 Z" id="椭圆形" fill="#FCFAF2" transform="translate(128.000000, 384.000000) rotate(180.000000) translate(-128.000000, -384.000000) "></path>
+            <g id="椭圆形-2" fill="black" fill-opacity="1">
+                <use filter="url(#filter-3)" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>
