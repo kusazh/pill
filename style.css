@@ -5,6 +5,8 @@ body {
   line-height: 1.2;
 
   width: 580px;
+  margin: 3rem auto;
+  padding: 0 3rem 0 3rem;
 
   color: #fff;
   background-color: #000;
@@ -16,11 +18,6 @@ button {
   background-size: cover;
 }
 
-.main {
-  margin: 3rem auto;
-  padding: 0 3rem 0 3rem;
-}
-
 .capsule {
   position: fixed;
   bottom: 3rem;
@@ -29,11 +26,18 @@ button {
   margin-left: -1rem;
 }
 
-.capsule button {
+.pink {
   width: 2rem;
   height: 4rem;
 
-  background-image: url("./pink.svg");
+  background-image: url('./pink.svg');
+}
+
+.libai {
+  width: 2rem;
+  height: 4rem;
+
+  background-image: url('./libai.svg');
 }
 
 .poem {
@@ -43,15 +47,15 @@ button {
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   right: 3rem;
 
-  width: 4rem;
-  height: 4rem;
+  width: 2rem;
+  height: 2rem;
 
   transition: opacity 1s;
 
-  background-image: url("./menu.svg");
+  background-image: url('./menu.png');
 }
 
 .popup {
@@ -59,35 +63,48 @@ button {
   bottom: -20rem;
   left: 50%;
 
-  overflow: hidden;
-
   width: 16rem;
   height: 16rem;
   margin-left: -8rem;
 
-  transition: 0.8s;
+  transition: .8s;
 
-  background-image: url("./menu.svg");
+  background-image: url('./bg.png');
   background-size: cover;
 }
 
+.light {
+  position: absolute;
+  z-index: 1;
+
+  width: 16rem;
+  height: 16rem;
+
+  pointer-events: none;
+
+  border: none;
+}
+
 .popupButton {
+  z-index: -1;
+
   padding: 2rem 0 0 2rem;
 }
 
 .popupButton button {
-  margin: 1rem 0.3rem 1rem 1rem;
-  opacity: 0.5;
-  width: 2rem;
-  height: 4rem;
+  margin: 1rem .3rem 1rem 1rem;
+
+  filter: drop-shadow(0 .125rem .25rem rgba(0, 0, 0, .50));
 }
 
 .close {
-  position: absolute;
+  position: fixed;
   z-index: -1;
 
   width: 100%;
   height: 100%;
+
+  pointer-events: none;
 }
 
 @media screen and (max-width: 580px) {
