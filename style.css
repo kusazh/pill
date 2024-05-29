@@ -1,9 +1,4 @@
 body {
-  font-family: Sans-serif;
-  font-size: 2.5rem;
-  font-weight: 900;
-  line-height: 1.2;
-
   width: 580px;
   margin: 3rem auto;
   padding: 0 3rem 0 3rem;
@@ -12,13 +7,20 @@ body {
   background-color: #000;
 }
 
+.poem {
+  font-family: Sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
 button {
   border: none;
   background-color: transparent;
   background-size: cover;
 }
 
-.capsule {
+.pill {
   position: fixed;
   bottom: 3rem;
   left: 50%;
@@ -26,17 +28,17 @@ button {
   margin-left: -1rem;
 }
 
-.pink {
+.pill button,
+.popupButton button {
   width: 2rem;
   height: 4rem;
+}
 
+.pink {
   background-image: url('./pink.svg');
 }
 
 .libai {
-  width: 2rem;
-  height: 4rem;
-
   background-image: url('./libai.svg');
 }
 
@@ -69,8 +71,7 @@ button {
 
   transition: .8s;
 
-  background-image: url('./bg.png');
-  background-size: cover;
+  background: center / contain url('./bg.png');
 }
 
 .light {
@@ -88,17 +89,19 @@ button {
 .popupButton {
   z-index: -1;
 
-  padding: 2rem 0 0 2rem;
+  padding: 2rem 2.125rem 2rem 2.125rem;
 }
 
 .popupButton button {
-  margin: 1rem .3rem 1rem 1rem;
+  margin: 1rem 0.875rem 1rem 0.875rem;
 
   filter: drop-shadow(0 .125rem .25rem rgba(0, 0, 0, .50));
 }
 
 .close {
   position: fixed;
+  left: 0;
+  top: 0;
   z-index: -1;
 
   width: 100%;
